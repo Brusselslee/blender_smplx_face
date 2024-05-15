@@ -52,34 +52,24 @@ Clone the repo:
   
   download encoded pretrained model from [here](https://drive.google.com/file/d/16bfjajmNJtsQT6pXN0me_FKFGJnhCTPY/view?usp=sharing), put the file `flame_encode_params.pkl` under the `data`.
 
+  yolov7 face pretrained model from [here](https://drive.google.com/file/d/1SxyTynMZhRJu0goGhNL4PVUFTMgGEgv4/view?usp=sharing), put the file `yolov8n_100e.pt` under the `data`.
+
+  
+
+* run the face recognition part
+  cd to the DECA folder
+  ```bash
+  python demo_video.py -i 0
+  ```
+    
 
 
 ## quick start
 
-* in blender choose the smplx model to addon
-  
 
-* push the webcam botton
-  <p align="center">   
-  <img src="Doc/start.gif">
-  </p> 
+* in blender make sure addon was loaded , and select `View` -> `Sidebar`, in Sidebar select `Webcam`
 
-* run the face recognition part
-  cd to the smpl_face_blender 
-  ```bash
-  python demo_video.py -i 0
-  ```
-
-
-
-* more video can watch [SMPL-X Blender Add-On -- Tutorial](https://www.youtube.com/watch?v=DY2k29Jef94) 
-* my addon [video]() 
-
-
-
-## Usage
-
-* in blender choose the smplx model to addon
+* in blender choose the smplx model to add 
   
 
 * push the webcam botton
@@ -87,11 +77,22 @@ Clone the repo:
   <img src="Doc/start.gif">
   </p>
 
+* run the face recognition part
+  cd to the smpl_face_blender 
+  ```bash
+  python demo_video.py -i 0
+  ```
+
+* more video can watch [SMPL-X Blender Add-On -- Tutorial](https://www.youtube.com/watch?v=DY2k29Jef94) 
+* my addon [video](https://www.bilibili.com/video/BV12D421A7Gf/?spm_id_from=333.999.0.0&vd_source=68a5de8a8ffee0752ac60feb59fc0d68) 
+
 
 ## TODO
+- [ ] tracking on custom face (multi-face situation tracking)
 - [ ] more blender addon user interaction
 - [ ] extend smplx model expression
 - [ ] drive custom model
+- [ ] merge two part(blender addon and face recognition) version,in blender install pytorch ?
 
 
 

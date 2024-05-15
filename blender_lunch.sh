@@ -1,1 +1,0 @@
-./blender .\smpl.blend --python .\demo_video_blender.py

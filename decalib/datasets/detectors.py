@@ -66,7 +66,7 @@ class YOLOV8(object):
         if device == 'cuda': cudnn.benchmark = True
         
         from ultralytics import YOLO
-        self.model = YOLO('./yolov8n_100e.pt')
+        self.model = YOLO('./data/yolov8n_100e.pt')
         self.model.to(device)
         
         self.box_format = 'bbox'
@@ -89,7 +89,6 @@ class YOLOV8(object):
         
         # multiple face tracking
         
-        
         img_w, img_h = img.shape[1], img.shape[0]
         idx = self.filter_center_box(image_boxes, img_w, img_h)    
         
@@ -97,8 +96,6 @@ class YOLOV8(object):
             
         filtered_boxes = center_box
             
-        
-                
         return filtered_boxes, self.box_format
 
     

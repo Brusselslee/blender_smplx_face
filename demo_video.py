@@ -57,8 +57,8 @@ def main(args):
 
     # load test images 
     
-    # streamdata = datasets.WebcamStream('rtsp://admin:hik699188@192.168.1.8/Streaming/Channels/1', iscrop=args.iscrop, face_detector=args.detector, sample_step=args.sample_step)
-    streamdata = datasets.VideoData(args.inputpath, iscrop=args.iscrop, face_detector=args.detector, sample_step=args.sample_step)
+    streamdata = datasets.WebcamStream(args.inputpath, iscrop=args.iscrop, face_detector=args.detector, sample_step=args.sample_step)
+    # streamdata = datasets.VideoData(args.inputpath, iscrop=args.iscrop, face_detector=args.detector, sample_step=args.sample_step)
     
     # testdata = datasets.TestData(args.inputpath, iscrop=args.iscrop, face_detector=args.detector, sample_step=args.sample_step)
 
