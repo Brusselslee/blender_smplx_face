@@ -58,7 +58,6 @@ Clone the repo:
 
   yolov8 face pretrained model from [here](https://drive.google.com/file/d/1SxyTynMZhRJu0goGhNL4PVUFTMgGEgv4/view?usp=sharing), put the file `yolov8n_100e.pt` under the `data`.
 
-  
 
 * run the face recognition part
   cd to the DECA folder
