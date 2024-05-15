@@ -1,4 +1,8 @@
 # Flame drive blender smpl face model 
+<p align="left">
+<a href="Doc/README_CN.md"><img src="https://img.shields.io/badge/文档-中文版-blue.svg" alt="CN doc"></a> 
+<a href="README.md"><img src="https://img.shields.io/badge/document-English-blue.svg" alt="EN doc"></a>
+</p>
 
   <p align="center"> 
   <img src="Doc/cut.gif">
@@ -20,7 +24,7 @@ run blender addon frist, then local face recognition part
 
 #### download the addon
 
-* download the addon from [here](https://drive.google.com/file/d/1QYBQjPlzC7Xk06JVYWWQSltdx7gg70c_/view?usp=sharing)
+* download the addon from [here](https://drive.google.com/file/d/1QYBQjPlzC7Xk06JVYWWQSltdx7gg70c_/view?usp=sharing), or download from release page
 
 
 #### blender load
@@ -52,7 +56,7 @@ Clone the repo:
   
   download encoded pretrained model from [here](https://drive.google.com/file/d/16bfjajmNJtsQT6pXN0me_FKFGJnhCTPY/view?usp=sharing), put the file `flame_encode_params.pkl` under the `data`.
 
-  yolov7 face pretrained model from [here](https://drive.google.com/file/d/1SxyTynMZhRJu0goGhNL4PVUFTMgGEgv4/view?usp=sharing), put the file `yolov8n_100e.pt` under the `data`.
+  yolov8 face pretrained model from [here](https://drive.google.com/file/d/1SxyTynMZhRJu0goGhNL4PVUFTMgGEgv4/view?usp=sharing), put the file `yolov8n_100e.pt` under the `data`.
 
   
 
@@ -72,7 +76,7 @@ Clone the repo:
 * in blender choose the smplx model to add 
   
 
-* push the webcam botton
+* push the webcam `start` botton
   <p align="center">   
   <img src="Doc/start.gif">
   </p>
@@ -88,18 +92,12 @@ Clone the repo:
 
 
 ## TODO
-- [ ] tracking on custom face (multi-face situation tracking)
+- [ ] tracking on target face (multi-face situation tracking)
 - [ ] more blender addon user interaction
 - [ ] extend smplx model expression
 - [ ] drive custom model
 - [ ] merge two part(blender addon and face recognition) version,in blender install pytorch ?
 
-
-
-
-## License
-This code and model are available for non-commercial scientific research purposes as defined in the [LICENSE](https://github.com/YadiraF/DECA/blob/master/LICENSE) file.
-By downloading and using the code and model you agree to the terms in the [LICENSE](https://github.com/YadiraF/DECA/blob/master/LICENSE). 
 
 ## Acknowledgements
 For functions or scripts that are based on external sources, we acknowledge the origin individually in each file.  
@@ -109,6 +107,6 @@ Here are some great resources we benefit:
 - [smplx](https://smpl-x.is.tue.mpg.de/) for blender model
 - [ultralytics](https://github.com/ultralytics/ultralytics) for face dectection and recognition
 - [face_landmarks](https://github.com/1adrianb/face-alignment) for face landmarks
-- [face_segmentation](https://github.com/YuvalNirkin/face_segmentation) for skin mask
+
 
 
